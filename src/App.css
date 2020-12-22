@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+.sky, .earth {
+  position: absolute;
+  left: 0;
+  height: 50vh;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.earth {
+  /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs26LhsI4K9mgTeVbeqSw83JCvuGpKz7VAGQ&usqp=CAU"); */
+background: grey;
+background-size: cover;
+  /* width: 100%; */
+  bottom: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sky {
+  background:lightblue;
+  top: 0;
+  left: 0;
+}
+body{
+  overflow: hidden;
+}
+.sky div{
+  position: absolute;
+  right: -140%;
+  overflow: hidden;
+}
+.sky .sun{
+  position: absolute;
+  top: 0px;
+  right: 50px;
+}
+.sky .sun img{
+  width: 150px;
+}
+.sky .cloud1{
+  width: 280px;
+  margin-top: 50px;
+  float: left;
+}
+.sky .cloud2{
+  width: 230px;
+  margin-top: -20px;
+  margin-left: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: inline;
+}
+.sky .cloud3{
+  width: 300px;
+  float: right;
+}
+/* .sky img{ */
+  /* position: absolute; */
+  /* top: 50px; */
+  /* width: 220px; */
+/* } */
+.alice {
+  position: absolute;
+  top: 0; left: 40%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  width: 80%;
+  max-width: 450px; /*height: 783px / 2*/
+  z-index: 1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.alice:before {
+    content: " ";
+    display: block;
+    padding-top: 87%;
 }
 
-.App-link {
-  color: #61dafb;
+.alice img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.alicesprite {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.earth div
+{
+  display: inline
+}
+div{
+  display: inline-block;
+}
+.tree, .bottle {
+  position: absolute;
+}
+.tree{
+  position: absolute;
+  top: 10%;
+  right: -120px;
+  width: 200px;
+}
+.bottle{
+  position: absolute;
+  bottom: 5px;
+  right: -1200px;
+}
+.tree img{
+  width: 200px;
+}
+.bottle .bottle1{
+  width: 120px;
+  padding-left: 50px;
+}
+
+.bottle .bottle2{
+  width: 150px;
+  padding-left: 450px;
+}
+
+.bottle .bottle3{
+  width: 100px;
+  padding-left: 250px;
 }
